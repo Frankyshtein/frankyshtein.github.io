@@ -1,0 +1,13 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em; }
+
+html body > div ul {
+  margin: 0 25%;
+  list-style: none;
+  width: 50%; }
+  html body > div ul a {
+    text-decoration: none; }
+
+.neuzort, .cards2 {
+  display: none; }
