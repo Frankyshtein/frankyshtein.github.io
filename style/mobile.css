@@ -1,0 +1,7 @@
+@media screen and (max-device-width: 750px) {
+  body {
+    font-size: 2em; }
+
+  div ul {
+    margin: 5% 0 0 0;
+    width: auto; } }

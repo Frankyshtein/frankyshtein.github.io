@@ -2,14 +2,16 @@ body {
   font-family: 'Comfortaa', cursive;
   font-size: 1em; }
 
-html body > div ul {
-  margin: 0 25%;
+div ul {
+  margin: 10% 25% 0 25%;
   list-style: none;
   width: 50%; }
-  html body > div ul li {
+  div ul li {
     margin-bottom: 5%; }
-  html body > div ul a {
+  div ul a {
     text-decoration: none; }
 
 .neuzort, .cards2, .cards, .exist {
   display: none; }
+
+/*# sourceMappingURL=style.css.map */

@@ -2,10 +2,10 @@ body {
     font-family: 'Comfortaa', cursive;
     font-size:1em;
 }
-html body > div {
-//    display: flex;
+div {
     ul {
-        margin:0 25%;
+        margin:10% 25% 0 25%;
+
         list-style: none;
         width: 50%;  
         li {
