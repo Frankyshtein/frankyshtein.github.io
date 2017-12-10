@@ -29,6 +29,10 @@ function large() {
     $(".module img").remove();
     $(".module").on('click', small);
     answer = $(this).index() + 2;
+    $(".wrapper img:nth-child(" + answer + ")").removeClass("hide").lazyLoadXT({show: true});
+    setTimeout(function(){
+        $(".wrapper img:nth-child(" + answer + ")").addClass("hide")
+    },10);
     $(this).clone().appendTo($(".module"));
     $(".module").fadeIn(400, function () {
         $(".module img").on('click', flip);
@@ -36,21 +40,25 @@ function large() {
 }
 
 function small(e) {
+    
     var target = $(e.target);
     if (!target.parents().hasClass('module') || target.hasClass("close") || target.parents().hasClass("close")) {
         build();
         $(".module").fadeOut(400);
+        $(".module").off();
     }
 }
 
 function flip() {
     toTheEnd();
     $(this).addClass("flip");
+//    $(".wrapper img:nth-child(" + answer + ")").addClass("hide");
     setTimeout(function () {
+        
         $(".module img").remove();
         $(".wrapper img:nth-child(" + answer + ")").clone().appendTo($(".module"));
         $(".module img").removeClass("hide").lazyLoadXT({show: true});
-
+        
     }, 1000);
 }
 build();
