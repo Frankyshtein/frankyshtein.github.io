@@ -4,4 +4,6 @@
 
   div ul {
     margin: 10% 0 0 0;
-    width: auto; } }
+    width: auto; }
+    div ul p {
+      font-size: 0.5em; } }
