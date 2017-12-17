@@ -1,6 +1,15 @@
 body {
   font-family: 'Comfortaa', cursive;
-  font-size: 1em; }
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 99vh; }
+  body > a {
+    font-size: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: inherit; }
 
 div ul {
   margin: 10% 25% 0 25%;
