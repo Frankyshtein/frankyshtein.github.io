@@ -21,27 +21,18 @@ body {
   .block .back2 {
     height: auto; }
   .block .container {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-top: 3%;
     position: relative;
     height: 100vh;
     z-index: 1;
     margin: 0 auto;
     width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap; }
     .block .container img {
       width: 1em; }
     .block .container .back {
@@ -59,15 +50,9 @@ body {
       width: 49%;
       z-index: 1; }
     .block .container .logo {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
+      align-items: center;
+      justify-content: flex-start; }
       .block .container .logo img {
         width: 2.5em; }
       .block .container .logo span {
@@ -75,15 +60,9 @@ body {
         margin-left: 0.7em;
         font-weight: bold; }
     .block .container .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      justify-content: flex-end;
+      align-items: center; }
       .block .container .menu .button {
         width: auto; }
       .block .container .menu a {
@@ -102,15 +81,9 @@ body {
       width: 12%;
       height: 3.4em;
       border-radius: 1.7em;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      align-items: center;
+      justify-content: center;
       padding-right: 1.4em;
       padding-left: 1.4em; }
       .block .container .button p {
@@ -123,18 +96,11 @@ body {
   .block .up {
     height: 25vh;
     background: url(../img/baner.png) center 70% no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 15%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+    box-sizing: border-box; }
     .block .up > div .rectangle {
       margin: 0; }
     .block .up > div p:first-child {
@@ -147,8 +113,7 @@ body {
     background: #fff;
     color: #000;
     padding: 5% 15% 2% 15%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background: #f9f9f9; }
     .block .down p {
       font-size: 2em;
@@ -158,14 +123,9 @@ body {
     .block .down > div {
       margin-bottom: 5%; }
     .block .down .slider_whatsTheySaid {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      justify-content: space-around;
+      align-items: center;
       height: 100%; }
       .block .down .slider_whatsTheySaid .left,
       .block .down .slider_whatsTheySaid .right {
@@ -177,18 +137,10 @@ body {
         width: 70%;
         height: 100%; }
         .block .down .slider_whatsTheySaid .window .review {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
           height: 80%; }
           .block .down .slider_whatsTheySaid .window .review p {
             font-size: 1.4em;
@@ -207,25 +159,17 @@ body {
     margin: 0 auto;
     height: 20%;
     padding-top: 3em;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+    box-sizing: border-box; }
   .block .comingSoonDown {
     height: 80%;
     width: 70%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
     .block .comingSoonDown .newFeature {
-      -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
-              box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
       border: 1px solid rgba(0, 0, 0, 0.1);
       width: 30%;
       padding: 2em; }
@@ -253,21 +197,14 @@ body {
       color: rgba(0, 0, 0, 0.703);
       font-weight: bold; }
   .block .posts {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     width: 70%;
     margin: 0 auto; }
     .block .posts img {
       width: 32%; }
   .block .posts + .button {
-    background: -webkit-gradient(linear, left top, right top, from(#fff), to(#f64340));
     background: linear-gradient(to right, #fff 0%, #f64340 100%);
     width: auto;
     margin: 0 auto;
@@ -289,15 +226,9 @@ body {
   background: #fff;
   color: #000;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  flex-direction: column;
+  justify-content: space-around; }
   .block2 > div > p {
     font-size: 2em;
     font-weight: bold;
@@ -329,15 +260,9 @@ body {
       width: 100%;
       height: 100%;
       z-index: 1;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      align-items: center;
+      justify-content: center; }
       .block2 .slider .frame img {
         width: 10.9%; }
     .block2 .slider .slides {
@@ -345,26 +270,16 @@ body {
       height: 100%;
       width: 300%;
       left: -100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      align-items: center;
+      justify-content: space-between;
       z-index: 2; }
       .block2 .slider .slides img {
         width: 3.34%;
         margin-top: -0.005%; }
   .block2 .controlls {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     color: rgba(0, 0, 0, 0.403); }
     .block2 .controlls .left,
     .block2 .controlls .right {
@@ -381,3 +296,5 @@ body {
   height: 0.19rem;
   background: #f64340;
   margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
