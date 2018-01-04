@@ -1,5 +1,11 @@
+@font-face {
+  font-family: Motoko;
+  src: url(fonts/MokotoGlitch.otf); }
+@font-face {
+  font-family: Motoko2;
+  src: url(fonts/MokotoGlitchMarkI.otf); }
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Motoko', cursive;
   font-size: 1.5em;
   display: flex;
   justify-content: space-between;
@@ -19,17 +25,25 @@ div ul {
   div ul li:hover {
     cursor: pointer; }
   div ul li p {
+    font-family: 'Comfortaa', cursive;
     line-height: 1.5em;
     padding-left: 1em; }
+    div ul li p a {
+      padding: 0.1em 0.3em 0.1em 0.3em; }
   div ul li p:hover {
     cursor: default; }
+  div ul li div > a:hover {
+    font-family: 'Motoko2'; }
   div ul a {
     text-decoration: none;
     color: #fff;
     background: #000;
-    padding: 0.2em 0.5em 0.1em 0.5em; }
+    padding: 0 0.25em 0.2em 0.3em; }
 
-.neuzort, .cards2, .cards, .exist {
+.neuzort,
+.cards2,
+.cards,
+.exist {
   display: none; }
 
 /*# sourceMappingURL=style.css.map */
