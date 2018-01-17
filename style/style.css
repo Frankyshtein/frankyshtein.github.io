@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 99vh; }
+  height: 96vh; }
   body > a {
     font-size: 0.5em;
     text-align: center;
@@ -29,7 +29,7 @@ div ul {
     line-height: 1.5em;
     padding-left: 1em; }
     div ul li p a {
-      padding: 0.1em 0.3em 0.1em 0.3em; }
+      padding: 0.1em 0.3em 0 0.3em; }
   div ul li p:hover {
     cursor: default; }
   div ul li div > a:hover {

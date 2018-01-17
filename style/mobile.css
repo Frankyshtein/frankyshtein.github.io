@@ -5,6 +5,10 @@
   div ul {
     margin: 10% 0 0 0;
     width: auto; }
+    div ul li {
+      padding-left: 0.2em; }
+      div ul li p a {
+        padding-bottom: 0.09em; }
     div ul p {
       font-size: 0.5em; } }
 

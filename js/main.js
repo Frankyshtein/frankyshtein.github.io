@@ -7,5 +7,4 @@ $("li").on('click', function () {
         $(this).children("div").slideToggle().removeClass("opened");
         console.log("hey")
     }
-
 });
