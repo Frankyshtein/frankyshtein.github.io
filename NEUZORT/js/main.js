@@ -18,7 +18,6 @@ function slideLeft() {
     }
     $(".block .slides").animate({left:"+=16.11%"},function(){$(".block .controlls .left").on('click', slideLeft);});
     steps+=1;
-    console.log(steps);
 }
 function slideRight() {
     $(".block .controlls .right").off();
@@ -28,7 +27,6 @@ function slideRight() {
     }
     $(".block .slides").animate({left:"-=16.11%"},function(){$(".block .controlls .right").on('click', slideRight);});
     steps-=1;
-    console.log(steps);
 }
 $(".block .controlls .left").on('click', slideLeft);
 $(".block .controlls .right").on('click', slideRight);
