@@ -70,7 +70,6 @@ function nextOne() {
         $(".popap").children().fadeIn();
     });
     $(".popap").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
-        console.log('I\'m here!')
         $(".popap").removeClass("flip");
         $(".popap").unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd");
     })
