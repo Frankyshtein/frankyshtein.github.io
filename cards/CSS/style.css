@@ -88,9 +88,8 @@ body {
     margin-bottom: 20px;
 }
 .flip {
-    -webkit-transform: perspective(500px) rotateY(-360deg);
-    transform: perspective(500px) rotateY(-360deg);
-    -webkit-transition: all 1s;
+    perspective: 500px;
+    transform: rotateY(-360deg);
     transition: all 1s;
 }
 .first {background: #23efc6;}
