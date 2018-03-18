@@ -1,3 +1,6 @@
+$(window).on('load', function () {
+    $(".preload").delay(1000).fadeOut('slow');
+  });
 $("li").on('click', function () {
     if (!$(this).children("div").hasClass("opened")) {
         
