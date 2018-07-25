@@ -1,8 +1,8 @@
 @media screen and (max-device-width: 750px) {
   div ul {
-    margin: 10% 0 0 0;
-    width: auto; }
+    margin: 10% 0 0 0; }
     div ul li {
-      padding-left: 0.2em; }
+      padding: 0 0.1em 0 0.2em;
+      width: 100vw; }
     div ul p {
       font-size: 0.65em; } }
