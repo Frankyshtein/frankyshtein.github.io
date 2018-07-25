@@ -1,6 +1,6 @@
 let lang = 'EN';
-let ru = ['Денис Хомич','Фронт-энд разработчик','<a href="Хомич Д. А..docx" download="">Скачать резюме</a>','Просмотреть проекты на <a>Github</a>','Ещё один проект на <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Контакты:'];
-let en = ['Denis Homich','Front-end Developer','<a href="Хомич Д. А..docx" download="">Download CV</a>','View some projects on <a>Github</a>','Another project on <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Contacts:'];  
+let ru = ['Денис Хомич','Фронт-энд разработчик','<a href="Хомич Д. А..docx" download="">Скачать резюме</a>','Просмотреть проекты на <a href="github/projects.html" target="_blank">Github</a>','Ещё один проект на <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Контакты:'];
+let en = ['Denis Homich','Front-end Developer','<a href="Хомич Д. А..docx" download="">Download CV</a>','View some projects on <a href="github/projects.html" target="_blank">Github</a>','Another project on <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Contacts:'];  
 (function init() {
     document.querySelector('.langSelect .selected + span').addEventListener('click', langSwitch);
     document.querySelector('.langSelect .selected').addEventListener('click', langSwitch);
