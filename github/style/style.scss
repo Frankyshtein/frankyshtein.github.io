@@ -1,22 +1,13 @@
-@font-face {
-    font-family: Motoko;
-    src: url(fonts/MokotoGlitch.otf);
-
-}
-
-@font-face {
-    font-family: Motoko2;
-    src: url(fonts/MokotoGlitchMarkI.otf);
-
-}
 
 body {
-    font-family: 'Motoko', cursive;
-    font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.2em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 96vh;
+    background: url(../../style/ps.png);
+    min-width: 790px;
     & > a {
         font-size: 0.5em;
         text-align: center;
@@ -32,33 +23,33 @@ div {
         line-height: 2em;
         width: 50%;
         li {
-            //            margin: 1em;
             &:hover {
                 cursor: pointer;
             }
-            p {
-                font-family: 'Comfortaa', cursive;
-                line-height: 1.5em;
-                padding-left: 1em;
-                a {
-                    padding: 0.1em 0.3em 0 0.3em;
-                }
-            }
-            p:hover {
-                cursor: default;
-            }
             div {
-                & > a:hover {
-                    font-family: 'Motoko2';
+                font-size:0.7em;
+                p {
+                    line-height: 1.5em;
+                    padding-left: 1em;
+                    a {
+                        padding: 0 0.3em 0 0.3em;
+                        white-space: nowrap;
+                    }
+                }
+                p:hover {
+                    cursor: default;
+                }
+                & > a {
+                   font-size: 1.42857em; 
                 }
             }
         }
         a {
-            text-decoration: none;            color: #fff;
+            text-decoration: none;            
+            color: #fff;
             background: #000;
-            padding: 0 0.25em 0.2em 0.3em;
+            padding: 0 0.3em 0 0.3em;
         }
-
     }
 }
 

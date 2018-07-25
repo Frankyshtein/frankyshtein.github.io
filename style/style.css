@@ -1,13 +1,12 @@
 body {
   background: url(ps.png);
   padding-top: calc(45vh - 235px);
-  min-height: 550px;
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
   position: relative; }
 
 .wrapper {
-  padding: 20px;
+  padding: 25px 20px 20px 20px;
   margin: auto;
   min-width: 480px;
   width: 30%;
@@ -54,4 +53,5 @@ body {
       margin: 10px 0; }
   .langSelect {
     top: auto;
-    left: calc(50% - 50px); } }
+    left: calc(50% - 50px);
+    padding-bottom: 20px; } }

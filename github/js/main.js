@@ -1,13 +1,13 @@
 $(window).on('load', function () {
-    $(".preload").delay(1000).fadeOut('slow');
+    $(".preload").delay(800).fadeOut('slow');
   });
-$("li").on('click', function () {
-    if (!$(this).children("div").hasClass("opened")) {
+$("li span").on('click', function () {
+    console.log('hey');
+    if (!$(this).siblings().hasClass("opened")) {
         
         $(".opened").slideToggle().removeClass("opened");
-        $(this).children("div").slideToggle().addClass("opened");
+        $(this).siblings().slideToggle().addClass("opened");
     } else {
-        $(this).children("div").slideToggle().removeClass("opened");
-        console.log("hey")
+        $(this).siblings().slideToggle().removeClass("opened");
     }
 });
