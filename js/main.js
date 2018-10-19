@@ -1,6 +1,6 @@
 let lang = 'EN';
-let ru = ['Денис Хомич','Фронт-энд разработчик','<a href="Хомич Д. А..pdf" download="">Скачать резюме</a>','Просмотреть проекты на <a href="github/projects.html" target="_blank">Github</a>','Ещё один проект на <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Контакты:'];
-let en = ['Denis Homich','Front-end Developer','<a href="Homich D. A..pdf" download="">Download CV</a>','View some projects on <a href="github/projects.html" target="_blank">Github</a>','Another project on <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Contacts:'];  
+let ru = ['Денис Хомич','Фронт-энд разработчик','<a href="Хомич Д. А..pdf" download="">Скачать резюме</a>','Просмотреть проекты на <a href="github/projects.html" target="_blank">Github</a>','Ещё один проект на <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Мой профиль на <a href="https://trailhead.salesforce.com/en/me/00550000008DsecAAC" target="_blank">Trailhead</a>','Контакты:'];
+let en = ['Denis Homich','Front-end Developer','<a href="Homich D. A..pdf" download="">Download CV</a>','View some projects on <a href="github/projects.html" target="_blank">Github</a>','Another project on <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','My profile on <a href="https://trailhead.salesforce.com/en/me/00550000008DsecAAC" target="_blank">Trailhead</a>','Contacts:'];  
 (function init() {
     document.querySelector('.langSelect .selected + span').addEventListener('click', langSwitch);
     document.querySelector('.langSelect .selected').addEventListener('click', langSwitch);
