@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'B52';
+    src: url('../font/B52.woff') format('woff'),
+        url('../font/B52.otf') format('opentype'),
+        url('../font/B52.svg') format('svg'),
+        url('../font/B52.ttf') format('truetype'),
+        url('../font/B52.eot');
+}
+
+body {
+    background: url(../img/ps.png);
+    padding-top: calc(45vh - 235px);
+    font-size: 25px;
+    font-family: 'B52';
+    position: relative;
+}
+
+.wrapper {
+    padding: 25px 20px 20px 20px;
+    margin: auto;
+    min-width: 480px;
+    width: 30%;
+    height: 470px;
+
+    a {
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+        padding: 0 5px;
+        animation: move 3s linear infinite;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+}
+
+.langSelect {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 100px;
+
+    span {
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+    .selected {
+        background: #000;
+        color: #fff;
+        cursor: auto;
+        transition: all 1s;
+        animation: move 3s linear infinite;
+    }
+}
+
+
+.rotation {
+    animation: rotation 1.8s;
+    -webkit-animation: rotation 1.8s;
+}
+
+@keyframes rotation {
+    0% {}
+
+    50% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+    100% {}
+}
+
+@keyframes move {
+    0% {}
+
+    50% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    100% {}
+}
+
+@media screen and (max-device-width: 750px) {
+    body {
+        padding: 20px;
+        min-height: 100%;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .wrapper {
+        padding: 0;
+        margin: 0;
+        min-width: auto;
+        width: auto;
+        height: auto;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    .langSelect {
+        top: auto;
+        left: calc(50% - 50px);
+        padding-bottom: 20px;
+    }
+
+    .rotation {
+        animation: rotation 1.8s linear;
+        -webkit-animation: rotation 1.8s linear;
+}
+
+    @keyframes rotation {
+        0% {}
+
+        99% {
+            transform: rotateZ(1440deg);
+            -webkit-transform: rotateZ(1440deg);
+            -moz-transform: rotateZ(1440deg);
+            -ms-transform: rotateZ(1440deg);
+            -o-transform: rotateZ(1440deg);
+}
+
+        100% {}
+    }
+}

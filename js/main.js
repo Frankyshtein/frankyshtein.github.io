@@ -1,26 +1,34 @@
 let lang = 'EN';
-let ru = ['Денис Хомич','Фронт-энд разработчик','<a href="Хомич Д. А..pdf" download="">Скачать резюме</a>','Просмотреть проекты на <a href="github/projects.html" target="_blank">Github</a>','Ещё один проект на <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Мой профиль на <a href="https://trailhead.salesforce.com/en/me/00550000008DsecAAC" target="_blank">Trailhead</a>','Контакты:'];
-let en = ['Denis Homich','Front-end Developer','<a href="Homich D. A..pdf" download="">Download CV</a>','View some projects on <a href="github/projects.html" target="_blank">Github</a>','Another project on <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','My profile on <a href="https://trailhead.salesforce.com/en/me/00550000008DsecAAC" target="_blank">Trailhead</a>','Contacts:'];  
-(function init() {
-    document.querySelector('.langSelect .selected + span').addEventListener('click', langSwitch);
-    document.querySelector('.langSelect .selected').addEventListener('click', langSwitch);
-    document.querySelector('.wrapper').addEventListener('transitionend',function(){
-        textSwitch();
-        document.querySelector('.wrapper').classList.toggle('disappeared')
-    });
-}());
+let ru = ['Денис Хомич','Фронт-энд разработчик','<a href="Хомич Д. А..pdf" download="">Скачать резюме</a>','Просмотреть проекты на <a href="projects.html" target="_blank">Github</a>','Ещё один проект на <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>','Контакты:'];
+let en = ['Denis Homich','Front-end Developer','<a href="Homich D. A..pdf" download="">Download CV</a>','View some projects on <a href="projects.html" target="_blank">Github</a>','Another project on <a href="https://bitbucket.org/frankyshtein/" target="_blank">Bitbucket</a>', 'Contacts:'];  
+
 function langSwitch (e) {
+    let count = 1;
     if ( !e.target.classList.contains('selected') ) {
         document.querySelector('.selected').classList.toggle('selected');
         e.target.classList.toggle('selected');
         lang = e.target.textContent;
-        document.querySelector('.wrapper').classList.toggle('disappeared');
+        document.querySelectorAll('.line').forEach((item,index)=>{
+            item.classList.remove('rotation');
+            setTimeout(()=>{
+                item.classList.add('rotation');
+                setTimeout(()=>{
+                    textSwitch(item,index);
+                },900);
+            },count*300);
+            count++;
+        });
     }
 }
-function textSwitch () {
+function textSwitch (item, index) {
     if ( lang == 'RU') {
-        document.querySelectorAll('.wrapper > p').forEach((d,i) => d.innerHTML = ru[i]);
+        item.innerHTML = ru[index];
     } else {
-        document.querySelectorAll('.wrapper > p').forEach((d,i) => d.innerHTML = en[i]);
+        item.innerHTML = en[index];
     }
 }
+(function init() {
+    document.querySelector('.langSelect .selected + span').addEventListener('click', langSwitch);
+    document.querySelector('.langSelect .selected').addEventListener('click', langSwitch);
+    console.log('Look at the code here: https://github.com/Frankyshtein/frankyshtein.github.io/tree/dev');
+}());
