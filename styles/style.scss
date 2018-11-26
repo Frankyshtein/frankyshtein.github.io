@@ -20,7 +20,7 @@ body {
     margin: auto;
     min-width: 480px;
     width: 30%;
-    height: 470px;
+    height:470px;
 
     a {
         text-decoration: none;
@@ -31,18 +31,18 @@ body {
     }
 
     li {
-        margin-bottom: 15px;
+        margin-bottom:15px;
     }
 }
 
 .langSelect {
     position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 100px;
+    left:20px;
+    top:20px;
+    width:100px;
 
     span {
-        padding: 0 5px;
+        padding:0 5px;
         cursor: pointer;
     }
 
@@ -99,7 +99,10 @@ body {
         min-width: auto;
         width: auto;
         height: auto;
-
+        a {
+            display: inline-block;
+            padding-top: 5px;
+        }
         p {
             margin: 10px 0;
         }
@@ -109,6 +112,10 @@ body {
         top: auto;
         left: calc(50% - 50px);
         padding-bottom: 20px;
+        .selected{
+            display: inline-block;
+            padding-top: 5px;
+        }
     }
 
     .rotation {

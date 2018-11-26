@@ -3,25 +3,51 @@
         min-width: 0;
         padding-bottom: 2rem;
     }
+
     .wrapper {
         ul {
-            margin:0;
-            padding: 0;
-            li{
-                padding: 0 0.1em 0 0.2em; 
-                width:100vw;
+            a {
+                vertical-align: middle;
+                background-clip: border-box;
             }
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 0 0.1em 0 0.2em;
+                width: 100vw;
+            }
+
             p {
-                font-size:0.65em;
+                font-size: 0.65em;
                 padding-right: 1em;
             }
         }
     }
+
     .sign {
         position: unset;
         line-height: 0.7;
+
         &__word {
-            font-size: 3rem;
+            font-size: 4rem;
+            animation: initial;
+            -webkit-animation: initial;
+            text-shadow:
+            0 0 6px rgba(228, 202, 202, 0.92),
+            0 0 12px rgba(242, 30, 30, 0.52),
+            0 0 21px rgba(242, 30, 30, 0.92),
+            0 0 54px rgba(242, 30, 30, 0.92);
+        }
+
+        .badNeon {
+            animation: initial;
+            -webkit-animation: initial;
+            text-shadow:
+            0 0 6px rgba(228, 202, 202, 0.92),
+            0 0 12px rgba(242, 30, 30, 0.52),
+            0 0 21px rgba(242, 30, 30, 0.92),
+            0 0 54px rgba(242, 30, 30, 0.92);
         }
 
     }
