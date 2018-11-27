@@ -44,14 +44,16 @@
         a {
 
             color: #ffc8c6;
-            text-shadow: 0 0 10px rgb(255, 1, 1);
+            text-shadow: 0 0 5px rgb(255, 1, 1);
         }
-
+        span {
+            text-shadow: 0 0 1px #000;
+        }
         .badNeon {
             animation: initial;
             -webkit-animation: initial;
             color: #ffc8c6;
-            text-shadow: 0 0 10px rgb(255, 1, 1);
+            text-shadow: 0 0 5px rgb(255, 1, 1);
         }
 
     }
