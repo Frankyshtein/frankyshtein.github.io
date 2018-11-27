@@ -1,25 +1,33 @@
 @media screen and (max-device-width: 750px) {
     body {
         min-width: 0;
-        padding-bottom: 2rem;
     }
 
     .wrapper {
         ul {
-            a {
-                vertical-align: middle;
-                background-clip: border-box;
-            }
             margin: 0;
             padding: 0;
-
+            a {
+                display: inline-block;
+                padding-top: 3px;
+                line-height: 100%;
+            }
             li {
                 padding: 0 0.1em 0 0.2em;
                 width: 100vw;
+                div {
+                    p {
+                        margin:0;
+                        a {
+                            display: inline-block;
+                            padding-top: 3px;
+                            line-height: 100%;
+                        }
+                    }
+                }
             }
-
             p {
-                font-size: 0.65em;
+                font-size: 0.9em;
                 padding-right: 1em;
             }
         }
@@ -28,26 +36,22 @@
     .sign {
         position: unset;
         line-height: 0.7;
-
         &__word {
             font-size: 4rem;
             animation: initial;
             -webkit-animation: initial;
-            text-shadow:
-            0 0 6px rgba(228, 202, 202, 0.92),
-            0 0 12px rgba(242, 30, 30, 0.52),
-            0 0 21px rgba(242, 30, 30, 0.92),
-            0 0 54px rgba(242, 30, 30, 0.92);
+        }
+        a {
+
+            color: #ffc8c6;
+            text-shadow: 0 0 10px rgb(255, 1, 1);
         }
 
         .badNeon {
             animation: initial;
             -webkit-animation: initial;
-            text-shadow:
-            0 0 6px rgba(228, 202, 202, 0.92),
-            0 0 12px rgba(242, 30, 30, 0.52),
-            0 0 21px rgba(242, 30, 30, 0.92),
-            0 0 54px rgba(242, 30, 30, 0.92);
+            color: #ffc8c6;
+            text-shadow: 0 0 10px rgb(255, 1, 1);
         }
 
     }

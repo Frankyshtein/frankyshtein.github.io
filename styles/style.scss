@@ -88,7 +88,6 @@ body {
 @media screen and (max-device-width: 750px) {
     body {
         padding: 20px;
-        min-height: 100%;
         font-size: 24px;
         line-height: 150%;
     }
@@ -127,11 +126,11 @@ body {
         0% {}
 
         99% {
-            transform: rotateZ(1440deg);
-            -webkit-transform: rotateZ(1440deg);
-            -moz-transform: rotateZ(1440deg);
-            -ms-transform: rotateZ(1440deg);
-            -o-transform: rotateZ(1440deg);
+            transform: rotateZ(720deg);
+            -webkit-transform: rotateZ(720deg);
+            -moz-transform: rotateZ(720deg);
+            -ms-transform: rotateZ(720deg);
+            -o-transform: rotateZ(720deg);
 }
 
         100% {}
